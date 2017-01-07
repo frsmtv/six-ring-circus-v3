@@ -1,0 +1,24 @@
+{
+  "name": "six-ring circus",
+  "description": "This is a genarator for gulpfile and package.json",
+  "main": "",
+  "authors": [
+    "francois simitchiev"
+  ],
+  "license": "MIT License",
+  "keywords": [
+    "gulp"
+  ],
+  "homepage": "https://github.com/frsmtv/six-ring-circus-v3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "jquery": "^3.1.1"
+  }
+}

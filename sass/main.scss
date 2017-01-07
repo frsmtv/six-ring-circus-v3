@@ -1,0 +1,179 @@
+//@import "partials/contact-page";
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #212121;
+  background: rgba(255, 255, 255, 0.8);
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px solid transparent;
+
+    -webkit-transition: all 350ms ease-in-out;
+    -moz-transition: all 350ms ease-in-out;
+    -ms-transition: all 350ms ease-in-out;
+    -o-transition: all 350ms ease-in-out;
+    transition: all 350ms ease-in-out;
+
+    &:hover {
+      border-bottom: 1px solid #212121!important;
+    }
+  }
+
+  video#bgvid {
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background: url() no-repeat;
+    background-size: cover;
+  }
+
+  header {
+    height: 150px;
+    padding: 2%;
+    padding-bottom: 0;
+
+    h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+
+      a {
+        border-bottom: none!important;
+        &:hover {
+          border-bottom: none!important;
+        }
+      }
+    }
+    nav {
+      ul {
+        display: flex;
+        margin-top: -2%;
+        padding: 1%;
+        list-style: none;
+        font-size: 2rem;
+        li {
+          margin-right: 1%;
+        }
+      }
+    }
+  }
+
+  main {
+    //width: 80%;
+    padding: 3%;
+    padding-top: 5%;
+
+    #info {
+      display: none;
+
+      #palmares {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+      }
+
+      #bio {
+        font-size: 1.4rem;
+        text-align: justify;
+      }
+
+      #presse {
+        display: flex;
+        justify-content: space-around;
+        article {
+          text-align: justify;
+          margin: 0 2%;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    #concerts {
+      display: none;
+
+      margin-top: 2%;
+      h2 {
+        margin-left: 2%;
+        text-transform: uppercase;
+      }
+    }
+    #video {
+      display: none;
+    }
+    #audio {
+      display: none;
+
+      width: 70%;
+    }
+
+    #contact {
+      display: none;
+      
+      ul {
+        list-style: none;
+        &:first-child {
+          font-size: 2rem;
+          line-height: 1.5;
+        }
+      }
+      #social {
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        i {
+          font-size: 1.8rem;
+
+          -webkit-transition: all 350ms ease-in-out;
+          -moz-transition: all 350ms ease-in-out;
+          -ms-transition: all 350ms ease-in-out;
+          -o-transition: all 350ms ease-in-out;
+          transition: all 350ms ease-in-out;
+          &:hover {
+            opacity: .5;
+          }
+        }
+      }
+      #credits {
+        margin-left: 8%;
+        margin-top: 6%;
+        font-size: 1rem;
+        h3 {
+          //font-size: 1.8rem;
+          text-transform: uppercase;
+        }
+        #creditsLogos {
+          margin-top: 2%;
+          display: flex;
+          li {
+            margin-right: 4%;
+            a {
+              border-bottom: none;
+              &:hover {
+                opacity: .5;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    display: none;
+    
+    margin-top: 6%;
+    margin-left: 11%;
+    font-size: .8rem;
+  }
+
+
+}
