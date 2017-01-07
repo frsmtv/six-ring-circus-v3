@@ -41,6 +41,9 @@ html, body {
     h1 {
       font-size: 3rem;
       text-transform: uppercase;
+      &:hover {
+        cursor: pointer;
+      }
 
       a {
         border-bottom: none!important;

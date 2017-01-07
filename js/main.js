@@ -3,6 +3,16 @@ $(document).ready(function(){
 
 // **** UI ANIMATIONS ****
 
+    // **** H1 CLICK ****
+    $('h1').click(function(){
+        $('#info').hide();
+        $('#concerts').hide();
+        $('#video').hide();
+        $('#audio').hide();
+        $('#contact').hide();
+        $('footer').hide();
+    });
+
     // **** INFO SECTION ****
     $('#infobtn').click(function(){
        $('#info').show();
