@@ -3,6 +3,17 @@ $(document).ready(function(){
 
 // **** UI ANIMATIONS ****
 
+    // **** INIT BIGTEXT PLUGIN ****
+    $('#bigtext').bigtext();
+    $('.homebigtext').bigtext();
+
+        // **** BIG TEXT ANIMATION ****
+        setTimeout(function(){
+        $('h1').text('six-ring').addClass('animated fadeIn');
+        }, 1500);
+
+        // $('h1').delay(6000).text('circus');
+
     // **** H1 CLICK ****
     $('h1').click(function(){
         $('#info').hide();
