@@ -3,19 +3,25 @@ $(document).ready(function(){
 
 // **** UI ANIMATIONS ****
 
-    // **** INIT BIGTEXT PLUGIN ****
-    $('#bigtext').bigtext();
-    $('.homebigtext').bigtext();
-
-        // **** BIG TEXT ANIMATION ****
-        setTimeout(function(){
-        $('h1').text('six-ring').addClass('animated fadeIn');
-        }, 1500);
-
-        // $('h1').delay(6000).text('circus');
+    // **** NAV HIDE ON SCROLL ****
+    var scroll_start = 0;
+    var startchange = $('body');
+    var offset = startchange.offset();
+    $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+            $('nav').addClass('animated fadeOut');
+        } else {
+            $('nav').removeClass('fadeOut').addClass('fadeIn');
+        }
+    });
 
     // **** H1 CLICK ****
     $('h1').click(function(){
+        $('h1').hide();
+        $('main').fadeIn();
+        $('nav').fadeIn();
+
         $('#info').hide();
         $('#concerts').hide();
         $('#video').hide();
@@ -33,7 +39,7 @@ $(document).ready(function(){
        $('#contact').hide();
        $('footer').hide();
 
-       $('#infobtn').css('border-bottom', '1px solid #212121');
+       $('#infobtn').css('border-bottom', '1px solid #fff');
 
        $('#concertsbtn').css('border-bottom', 'none');
        $('#videobtn').css('border-bottom', 'none');
@@ -50,7 +56,7 @@ $(document).ready(function(){
         $('#contact').hide();
         $('footer').hide();
 
-        $('#concertsbtn').css('border-bottom', '1px solid #212121');
+        $('#concertsbtn').css('border-bottom', '1px solid #fff');
 
         $('#infobtn').css('border-bottom', 'none');
         $('#videobtn').css('border-bottom', 'none');
@@ -67,7 +73,7 @@ $(document).ready(function(){
         $('#contact').hide();
         $('footer').hide();
 
-        $('#videobtn').css('border-bottom', '1px solid #212121');
+        $('#videobtn').css('border-bottom', '1px solid #fff');
 
         $('#infobtn').css('border-bottom', 'none');
         $('#concertsbtn').css('border-bottom', 'none');
@@ -84,7 +90,7 @@ $(document).ready(function(){
         $('#contact').hide();
         $('footer').hide();
 
-        $('#audiobtn').css('border-bottom', '1px solid #212121');
+        $('#audiobtn').css('border-bottom', '1px solid #fff');
 
         $('#infobtn').css('border-bottom', 'none');
         $('#concertsbtn').css('border-bottom', 'none');
@@ -101,7 +107,7 @@ $(document).ready(function(){
         $('#contact').show();
         $('footer').show();
 
-        $('#contactbtn').css('border-bottom', '1px solid #212121');
+        $('#contactbtn').css('border-bottom', '1px solid #fff');
 
         $('#infobtn').css('border-bottom', 'none');
         $('#concertsbtn').css('border-bottom', 'none');
