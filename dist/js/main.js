@@ -16,13 +16,23 @@ $(document).ready(function(){
         }
     });
 
+    // **** H1 AUTO HIDE ****
+    setTimeout(function(){
+        $('h1').hide();
+        $('nav').fadeIn();
+        $('main').fadeIn();
+        $('#info').fadeIn();
+    }, 8000);
+
+
+
     // **** H1 CLICK ****
     $('h1').click(function(){
         $('h1').hide();
-        $('main').fadeIn();
         $('nav').fadeIn();
+        $('main').fadeIn();
+        $('#info').fadeIn();
 
-        $('#info').hide();
         $('#concerts').hide();
         $('#video').hide();
         $('#audio').hide();
