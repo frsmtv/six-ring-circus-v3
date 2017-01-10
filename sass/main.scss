@@ -1,12 +1,15 @@
 #whitelayer {
-  //position: fixed;
+  position: fixed;
+  z-index: -999;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  //background: rgba(255, 255, 255, 0.8);
-  background: #fff;
-  opacity: .8;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+body {
+  position: relative;
 }
 
 html, body {
@@ -39,19 +42,20 @@ html, body {
     text-transform: uppercase;
   }
 
-  #bg {
-    opacity: .5!important;
-  }
+  //#bg {
+  //  opacity: .5!important;
+  //}
   video#bgvid {
-    position: fixed;
-    right: 0;
-    bottom: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
-    //z-index: -100;
-    background-size: cover;
+    z-index: -1000;
+    overflow: hidden;
+
   }
 
   header {
