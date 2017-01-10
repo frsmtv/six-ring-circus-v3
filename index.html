@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="fr">
 <head>
     <meta charset="utf-8">
+    <meta lang="fr">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Six-Ring Circus - jazz hybride, rock progressif, tremplin émergence Jazz(s)Ra 2016. Elie Dufour (piano), Baptiste Ferrandis (guitare), Célia Forestier (chant), Elvire Jouve (batterie) et Alexandre Phalippon (basse).">
@@ -29,15 +29,15 @@
 </div>
 
     <!--**** VIDEO BG ****-->
-    <div id="bg">
-        <video autoplay loop poster="" id="bgvid" class="animated fadeIn">
-            <source src="six-ring-circus-bg.webm" type="video/webm">
-            <source src="six-ring-circus-bg.mp4" type="video/mp4">
-        </video>
-    </div>
+    <!--<div id="bg">-->
+        <!--<video autoplay="true" loop poster="" id="bgvid" class="animated fadeIn">-->
+            <!--<source src="six-ring-circus-bg.webm" type="video/webm">-->
+            <!--<source src="six-ring-circus-bg.mp4" type="video/mp4">-->
+        <!--</video>-->
+    <!--</div>-->
 
     <!--**** WHITE LAYER ****-->
-    <!--<div id="whitelayer"></div>-->
+    <div id="whitelayer"></div>
 
     <!--**** HEADER ****-->
     <header class="animated fadeIn">
@@ -64,8 +64,6 @@
             </ul>
         </nav>
     </header>
-
-    <body>
 
     <!--**** MAIN CONTENT ****-->
     <main>
@@ -125,7 +123,7 @@
             <!-- BANDSINTOWN -->
             <h2>Prochains concerts</h2>
             <div id="bandsintown">
-                <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><ahref="http://www.bandsintown.com/Six%20Ring%20Circus" class="bit-widget-initializer" data-artist="Six Ring Circus" data-prefix="fbjs">Six Ring Circus Tour Dates</a>
+                <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/Six%20Ring%20Circus" class="bit-widget-initializer" data-artist="Six Ring Circus" data-prefix="fbjs">Six Ring Circus Tour Dates</a>
             </div>
         </section> <!-- End: concerts section -->
 
@@ -195,7 +193,6 @@
     <!--</footer>-->
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="BigText/dist/bigtext.js"></script>
 <script src="js/main.js"></script>
 
     <!--**** PRELOADER ****-->
@@ -205,9 +202,9 @@
             $('#status').fadeOut(); // will first fade out the loading animation
             $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
             $('body').delay(350).css({'overflow':'visible'});
-        })
+        });
         //]]>
     </script>
 
-</body>
+    </body>
 </html>
