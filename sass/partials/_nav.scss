@@ -1,0 +1,33 @@
+nav {
+  a {
+    color: #e65928!important;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    &:hover {
+      border-bottom: 1px solid #e65928!important;
+    }
+  }
+  .top-left {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+  }
+  .top-right {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+  }
+  .bottom-left {
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+  }
+  .bottom-right {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+  }
+
+}

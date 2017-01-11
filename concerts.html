@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="fr">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Six-Ring Circus - jazz hybride, rock progressif, tremplin émergence Jazz(s)Ra 2016. Elie Dufour (piano), Baptiste Ferrandis (guitare), Célia Forestier (chant), Elvire Jouve (batterie) et Alexandre Phalippon (basse).">
+    <meta name="author" content="François SIMITCHIEV">
+    <title>Six-Ring Circus</title>
+
+    <!--**** FAVICON ****-->
+
+
+    <!--**** FONTS ****-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+
+    <!--**** STYLES ****   -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="PreLoadMe/css/styles.css">
+    <link rel="stylesheet" href="dist/css/bundle-sass.css">
+</head>
+
+<body>
+
+<!--**** PRELOADER ****-->
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+
+<!--**** VIDEO BG ****-->
+<div id="bg">
+    <video autoplay="true" loop poster="" id="bgvid" class="animated fadeIn">
+        <source src="six-ring-circus-bg.webm" type="video/webm">
+        <source src="six-ring-circus-bg.mp4" type="video/mp4">
+    </video>
+</div>
+
+<!--**** WHITE LAYER ****-->
+<div id="whitelayer"></div>
+
+<!--**** HEADER ****-->
+<header class="animated fadeIn">
+
+    <!--**** NAV ****-->
+
+
+
+</header>
+
+<!--**** MAIN CONTENT ****-->
+<main>
+
+    <!--**** CONCERTS ****-->
+    <section id="concerts" class="animated fadeIn">
+
+    <!-- BANDSINTOWN -->
+    <h2>Prochains concerts</h2>
+    <div id="bandsintown">
+    <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/Six%20Ring%20Circus" class="bit-widget-initializer" data-artist="Six Ring Circus" data-prefix="fbjs">Six Ring Circus Tour Dates</a>
+    </div>
+    </section> <!-- End: concerts section -->
+
+
+
+</main>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+<!--**** PRELOADER ****-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+    });
+    //]]>
+</script>
+
+</body>
+</html>
