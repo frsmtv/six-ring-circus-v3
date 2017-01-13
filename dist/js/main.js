@@ -3,44 +3,16 @@ $(document).ready(function(){
 
 // **** UI ANIMATIONS ****
 
-
-
-    // **** NAV HIDE ON SCROLL ****
-    // var scroll_start = 0;
-    // var startchange = $('body');
-    // var offset = startchange.offset();
-    // $(document).scroll(function() {
-    //     scroll_start = $(this).scrollTop();
-    //     if(scroll_start > offset.top) {
-    //         $('nav').addClass('animated fadeOut');
-    //     } else {
-    //         $('nav').removeClass('fadeOut').addClass('fadeIn');
-    //     }
-    // });
-
-    // **** H1 REDUCE ON SCROLL ****
-    // var scroll_start = 0;
-    // var startchange = $('body');
-    // var offset = startchange.offset();
-    // $(document).scroll(function() {
-    //     scroll_start = $(this).scrollTop();
-    //     if(scroll_start > offset.top) {
-    //         $('h1').css('font-size', '2rem');
-    //         $('h1 span').css('font-size', '2rem');
-    //     } else {
-    //         $('h1').css('font-size', '$h1FontSize');
-    //         $('h1 span').css('font-size', '$h1SpanFontSize');
-    //     }
-    // });
-
     // **** INFO SECTION ****
+    $('nav').delay(3000).show("pulsate");
+
     $('#info-btn').click(function(){
         $('body').scrollTop(0);
 
         $('h1').css('font-size', '2rem');
         $('h1 span').css('font-size', '2rem');
 
-       $('#info').show();
+       $('#info').show("fade", 1000);
        $('#concerts').hide();
        $('#video').hide();
        $('#contact').hide();
@@ -61,7 +33,7 @@ $(document).ready(function(){
         $('h1 span').css('font-size', '2rem');
 
         $('#info').hide();
-        $('#concerts').show();
+        $('#concerts').show("fade", 1000);
         $('#video').hide();
         $('#audio').hide();
         $('#contact').hide();
@@ -83,8 +55,8 @@ $(document).ready(function(){
 
         $('#info').hide();
         $('#concerts').hide();
-        $('#video').show();
-        $('#audio').show();
+        $('#video').show("fade", 1000);
+        $('#audio').show("fade", 1000);
         $('#contact').hide();
         $('footer').hide();
 
@@ -107,8 +79,8 @@ $(document).ready(function(){
         $('#concerts').hide();
         $('#video').hide();
         $('#audio').hide();
-        $('#contact').show();
-        $('footer').show();
+        $('#contact').show("fade", 1000);
+        $('footer').show("fade", 1000);
 
         $('#contact-btn').css('border-bottom', '1px solid #e65928');
 
