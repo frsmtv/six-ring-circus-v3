@@ -10,7 +10,7 @@ $h1SpanFontSize: 10rem;
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -39,7 +39,7 @@ html, body {
     transition: all 350ms ease-in-out;
 
     &:hover {
-      border-bottom: 1px solid #212121;
+      border-bottom: 1px solid #e65928;
     }
   }
 
@@ -68,7 +68,6 @@ html, body {
 
     h1 {
       text-transform: uppercase;
-      letter-spacing: 4px;
       font-size: $h1FontSize;
       text-align: center;
       letter-spacing: 20px;
@@ -96,7 +95,9 @@ html, body {
       margin-top: -10%;
       margin-left: auto;
       margin-right: auto;
-      padding-bottom: 4%;
+      letter-spacing: 2px;
+      color: #333;
+      //background: rgba(0, 0, 0, 0.5);
     }
 
     #info {
@@ -136,11 +137,15 @@ html, body {
     #video {
       display: none;
 
+      margin-left: auto;
+      margin-right: auto;
       text-align: center;
+      background: none!important;
     }
     #audio {
       display: none;
 
+      background: none!important;
       margin-top: 4%;
       margin-bottom: 4%;
       width: 853px;
@@ -176,6 +181,7 @@ html, body {
           -o-transition: all 350ms ease-in-out;
           transition: all 350ms ease-in-out;
           &:hover {
+            color: #e65928;
             opacity: .5;
           }
         }
