@@ -1,92 +1,64 @@
 $(document).ready(function(){
 
 
-// **** UI ANIMATIONS ****
+    // **** SCROLLA ****
+    $('.animate').scrolla();
+
+    // **** UI ANIMATIONS ****
+
+    // **** H1 REDUCE / NAV BOTTOM TO TOP ON SCROLL ****
+    var scroll_start = 0;
+    var startchange = $('body');
+    var offset = startchange.offset();
+    $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+            $('h1').css('font-size', '2rem');
+            $('h1').css('opacity', '.2');
+            $('h1 span').css('font-size', '2rem');
+            $('h1 span').css('opacity', '.2');
+        } else {
+            $('h1').css('font-size', '');
+            $('h1').css('opacity', '1');
+            $('h1 span').css('font-size', '');
+            $('h1 span').css('opacity', '1');
+        }
+    });
+
+    // **** HOME BUTTON ****
+    $('#home-btn').click(function(){
+        $('html, body').animate({
+            scrollTop: $('body').offset().top - 20
+        }, 2000);
+    });
 
     // **** INFO SECTION ****
-    $('nav').delay(3000).show("pulsate");
-
     $('#info-btn').click(function(){
-        $('body').scrollTop(0);
-
-        $('h1').css('font-size', '2rem');
-        $('h1 span').css('font-size', '2rem');
-
-       $('#info').show("fade", 1000);
-       $('#concerts').hide();
-       $('#video').hide();
-       $('#contact').hide();
-       $('footer').hide();
-
-       $('#info-btn').css('border-bottom', '1px solid #e65928');
-
-       $('#concerts-btn').css('border-bottom', 'none');
-       $('#media-btn').css('border-bottom', 'none');
-       $('#contact-btn').css('border-bottom', 'none');
+        $('html, body').animate({
+            scrollTop: $('#info').offset().top - 20
+        }, 2000);
     });
 
     // **** CONCERTS SECTION ****
     $('#concerts-btn').click(function(){
-        $('body').scrollTop(0);
-
-        $('h1').css('font-size', '2rem');
-        $('h1 span').css('font-size', '2rem');
-
-        $('#info').hide();
-        $('#concerts').show("fade", 1000);
-        $('#video').hide();
-        $('#audio').hide();
-        $('#contact').hide();
-        $('footer').hide();
-
-        $('#concerts-btn').css('border-bottom', '1px solid #e65928');
-
-        $('#info-btn').css('border-bottom', 'none');
-        $('#media-btn').css('border-bottom', 'none');
-        $('#contact-btn').css('border-bottom', 'none');
+        $('html, body').animate({
+            scrollTop: $('#concerts').offset().top - 20
+        }, 2000);
     });
 
     // **** MEDIAS SECTION ****
     $('#media-btn').click(function(){
-        $('body').scrollTop(0);
-
-        $('h1').css('font-size', '2rem');
-        $('h1 span').css('font-size', '2rem');
-
-        $('#info').hide();
-        $('#concerts').hide();
-        $('#video').show("fade", 1000);
-        $('#audio').show("fade", 1000);
-        $('#contact').hide();
-        $('footer').hide();
-
-        $('#media-btn').css('border-bottom', '1px solid #e65928');
-
-        $('#info-btn').css('border-bottom', 'none');
-        $('#concerts-btn').css('border-bottom', 'none');
-        $('#contact-btn').css('border-bottom', 'none');
+        $('html, body').animate({
+            scrollTop: $('#video').offset().top - 20
+        }, 2000);
     });
 
 
     // **** CONTACT SECTION ****
     $('#contact-btn').click(function(){
-        $('body').scrollTop(0);
-
-        $('h1').css('font-size', '2rem');
-        $('h1 span').css('font-size', '2rem');
-
-        $('#info').hide();
-        $('#concerts').hide();
-        $('#video').hide();
-        $('#audio').hide();
-        $('#contact').show("fade", 1000);
-        $('footer').show("fade", 1000);
-
-        $('#contact-btn').css('border-bottom', '1px solid #e65928');
-
-        $('#info-btn').css('border-bottom', 'none');
-        $('#concerts-btn').css('border-bottom', 'none');
-        $('#media-btn').css('border-bottom', 'none');
+        $('html, body').animate({
+            scrollTop: $('#contact').offset().top - 20
+        }, 2000);
     });
 
 

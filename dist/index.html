@@ -28,160 +28,170 @@
     <div id="status">&nbsp;</div>
 </div>
 
-    <!--**** HEADER ****-->
-    <header class="">
+<!--**** VIDEO BG ****-->
+<div id="bg">
+    <video autoplay="true" loop poster="" id="bgvid" class="">
+        <source src="six-ring-circus-bg.webm" type="video/webm">
+        <source src="six-ring-circus-bg.mp4" type="video/mp4">
+    </video>
+</div> <!-- End: video bg -->
 
-        <h1><span>We are</span><br>
-            Six-Ring<br>
-            Circus</h1>
+<!--**** WHITE LAYER ****-->
+<div id="whitelayer"></div>
 
-        <!--**** NAV ****-->
-        <nav>
-                <span class="corner-nav top-left"><a id="info-btn" href="#">Info</a> </span>
-                <span class="corner-nav top-right"><a id="concerts-btn" href="#">Concerts</a> </span>
-            <span class="corner-nav bottom-left"><a id="contact-btn" href="#">Contact</a> </span>
-            <span class="corner-nav bottom-right"><a id="media-btn" href="#">Medias</a> </span>
-        </nav>
+<!--**** HEADER ****-->
+<header class="">
 
-    </header>
+    <h1><span>We are</span><br>
+        Six-Ring<br>
+        Circus</h1>
 
-    <!--**** MAIN CONTENT ****-->
-    <main>
+    <!--**** NAV ****-->
+    <nav>
+        <ul>
+            <li><span class=""><a id="home-btn" href="#">Six-Ring CIRCUS</a> </span></li>
+            <li><span class=""><a id="info-btn" href="#">Info</a> </span></li>
+            <li><span class=""><a id="concerts-btn" href="#">Concerts</a> </span></li>
+            <li><span class=""><a id="media-btn" href="#">Medias</a> </span></li>
+            <li><span class=""><a id="contact-btn" href="#">Contact</a> </span></li>
+        </ul>
+    </nav>
 
-        <!--**** INFO SECTION ****-->
-        <section id="info" class="">
+</header>
 
-            <!--**** PALMARES ****-->
-            <p id="palmares" class="">
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                Lauréat émergence jazz(s)ra 2016<br>
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                Lauréat tremplin un doua de jazz 2015
-            </p>
+<!--**** MAIN CONTENT ****-->
+<main>
 
-            <!--**** BIO ****    -->
-            <p id="bio" class="">
-                Né de la rencontre de cinq musiciens venus d'horizons différents, le Six-Ring Circus puise son inspiration dans la scène jazz tout en s'ouvrant aux influences du monde moderne. Au travers de compositions et                         d'arrangements singuliers,<br>
-                le projet expose avec audace sa créativité et renie toutes frontières stylistiques.
-            </p>
+    <!--**** INFO SECTION ****-->
+    <section id="info" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
 
-            <!--**** PRESSE ****-->
-            <div id="presse">
-                <article class="Left">
-                    <p>
-                        « Six-Ring CIRCUS nous embarque dans un voyage musical hybride et mutant. Quittant allègrement la culture jazz pour des contrées rock très progressives ouvertes aux influences variées, ce groupe est musicalement renversant »
-                    </p>
-                </article>
+        <!--**** PALMARES ****-->
+        <p id="palmares" class="">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            Lauréat émergence jazz(s)ra 2016<br>
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            Lauréat tremplin un doua de jazz 2015
+        </p>
 
-                <article class="Down">
-                    <p>
-                        « Ce qui plaît surtout dans cette formation, outre les virtuosités en présence et la rythmiqued’enfer, c’est la créativité et le « saute frontières musicales » et l’énergie qui s’en dégage. Réjouissant ! »<br>
-                        <br>
-                        Jean-Louis Rossi, Jazz-Rhone-Alpes.com
-                    </p>
-                </article>
+        <!--**** BIO ****    -->
+        <p id="bio" class="">
+            Né de la rencontre de cinq musiciens venus d'horizons différents, le Six-Ring Circus puise son inspiration dans la scène jazz tout en s'ouvrant aux influences du monde moderne. Au travers de compositions et                         d'arrangements singuliers,<br>
+            le projet expose avec audace sa créativité et renie toutes frontières stylistiques.
+        </p>
 
-                <article class="Up">
-                    <p>
-                        « Une remarquable cohésion de groupe, à travers des changements de tempi, des mesures complexes, des lignes de basse et de drums acrobatiques. D'emblée le public est sidéré et aux anges. »
-                    </p>
-                </article>
+        <!--**** PRESSE ****-->
+        <div id="presse">
+            <article class="Left animate" data-animate="fadeInLeft" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <p>
+                    « Six-Ring CIRCUS nous embarque dans un voyage musical hybride et mutant. Quittant allègrement la culture jazz pour des contrées rock très progressives ouvertes aux influences variées, ce groupe est musicalement renversant »
+                </p>
+            </article>
 
-                <article class="RightBig">
-                    <p>
-                        « Les compositions sont pleines de belles pages atmosphériques, de jaillissements électro, de tempi hip hop ou néo-soul avec quelques transmutations du rythme en heavy-rock. Il y a du Hiatus Kaiyoté dans l'inspiration et surtout beaucoup de ressources personnelles. »<br>
-                        <br>
-                        Bernard Otternaud, Jazz-Rhone-Alpes.com
-                    </p>
-                </article>
-            </div> <!-- End: presse -->
-        </section> <!-- End: info section -->
+            <article class="Down animate" data-animate="fadeInDown" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <p>
+                    « Ce qui plaît surtout dans cette formation, outre les virtuosités en présence et la rythmiqued’enfer, c’est la créativité et le « saute frontières musicales » et l’énergie qui s’en dégage. Réjouissant ! »<br>
+                    <br>
+                    Jean-Louis Rossi, Jazz-Rhone-Alpes.com
+                </p>
+            </article>
 
-        <!--**** CONCERTS ****-->
-        <section id="concerts" class="">
+            <article class="Up animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <p>
+                    « Une remarquable cohésion de groupe, à travers des changements de tempi, des mesures complexes, des lignes de basse et de drums acrobatiques. D'emblée le public est sidéré et aux anges. »
+                </p>
+            </article>
 
-            <!-- BANDSINTOWN -->
-            <div id="bandsintown">
-                <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/Six%20Ring%20Circus" class="bit-widget-initializer" data-artist="Six Ring Circus" data-prefix="fbjs">Six Ring Circus Tour Dates</a>
-            </div>
-        </section> <!-- End: concerts section -->
+            <article class="RightBig animate" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+                <p>
+                    « Les compositions sont pleines de belles pages atmosphériques, de jaillissements électro, de tempi hip hop ou néo-soul avec quelques transmutations du rythme en heavy-rock. Il y a du Hiatus Kaiyoté dans l'inspiration et surtout beaucoup de ressources personnelles. »<br>
+                    <br>
+                    Bernard Otternaud, Jazz-Rhone-Alpes.com
+                </p>
+            </article>
+        </div> <!-- End: presse -->
+    </section> <!-- End: info section -->
+
+    <!--**** CONCERTS ****-->
+    <section id="concerts" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+
+        <!-- BANDSINTOWN -->
+        <div id="bandsintown">
+            <script type='text/javascript' src='http://widget.bandsintown.com/javascripts/bit_widget.js'></script><a href="http://www.bandsintown.com/Six%20Ring%20Circus" class="bit-widget-initializer" data-artist="Six Ring Circus" data-prefix="fbjs">Six Ring Circus Tour Dates</a>
+        </div>
+    </section> <!-- End: concerts section -->
 
 
-        <!--**** VIDEO ****-->
-        <section id="video" class="">
+    <!--**** VIDEO ****-->
+    <section id="video" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
 
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/NwvUks0nrvo?showinfo=0" frameborder="0"                 allowfullscreen></iframe>
-        </section> <!-- End: video -->
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/NwvUks0nrvo?showinfo=0" frameborder="0"                 allowfullscreen></iframe>
+    </section> <!-- End: video -->
 
-        <!--**** AUDIO ****-->
-        <section id="audio" class="">
+    <!--**** AUDIO ****-->
+    <section id="audio" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
 
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/259806354&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-        </section> <!-- End: audio -->
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/259806354&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </section> <!-- End: audio -->
 
-        <!--**** CONTACT ****-->
-        <section id="contact" class="">
+    <!--**** CONTACT ****-->
+    <section id="contact" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+
+        <ul>
+            <li><a href="mailto:sixringcircus.band@gmail.com">sixringcircus.band@gmail.com</a> </li>
+            <li><a href="#">dossier de presse</a> | <a href="#">presskit (en)</a> </li>
+            <li><a href="#">fiche technique | tech rider</a> </li>
+        </ul>
+
+        <!--**** SOCIAL ****-->
+        <ul id="social">
+            <li><a href="https://www.facebook.com/sixringcircusband/?fref=ts" target="_blank"><i class="fa fa-facebook"                 aria-hidden="true"></i></a> </li>
+            <li><a href="https://soundcloud.com/sixringcircus" target="_blank"><i class="fa fa-soundcloud"                              aria-hidden="true"></i></a> </li>
+            <li><a href="https://www.youtube.com/watch?v=NwvUks0nrvo&list=PLUMKsOqa5WP8k5eGxkyQZrkjs4zcSS1C9"                           target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </li>
+        </ul>
+
+        <!--**** CREDITS ****-->
+        <div id="credits" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+            <h3>Six-Ring Circus remercie</h3>
 
             <ul>
-                <li><a href="mailto:sixringcircus.band@gmail.com">sixringcircus.band@gmail.com</a> </li>
-                <li><a href="#">dossier de presse</a> | <a href="#">presskit (en)</a> </li>
-                <li><a href="#">fiche technique | tech rider</a> </li>
+                <li><a href="http://www.jazzsra.fr/" target="_blank">Jazz(s)Ra</a> </li>
+                <li><a href="http://www.tontonfling.org/">Studio les Tontons Flingueurs</a> </li>
+                <li><a href="http://oreillesdelicates.fr/" target="_blank">Studio Oreilles Délicates</a> </li>
+                <li></li>
+                <li><span style="font-weight: bold">Photographies :</span> Christian-Cyril Cordat / Liva Rakotoarison</li>
             </ul>
 
-            <!--**** SOCIAL ****-->
-            <ul id="social">
-                <li><a href="https://www.facebook.com/sixringcircusband/?fref=ts" target="_blank"><i class="fa fa-facebook"                 aria-hidden="true"></i></a> </li>
-                <li><a href="https://soundcloud.com/sixringcircus" target="_blank"><i class="fa fa-soundcloud"                              aria-hidden="true"></i></a> </li>
-                <li><a href="https://www.youtube.com/watch?v=NwvUks0nrvo&list=PLUMKsOqa5WP8k5eGxkyQZrkjs4zcSS1C9"                           target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </li>
+            <!--**** CREDITS LOGOS ****-->
+            <ul id="creditsLogos">
+                <li class="animate" data-animate="fadeInLeft" data-duration="1.0s" data-delay="0.1s" data-offset="100"><a href="http://www.jazzsra.fr/" target="_blank"><img src="img/logoJazzsra.png"> </a> </li>
+                <li class="animate" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.1s" data-offset="100"><a href="http://www.undouadejazz.com/" target="_blank"><img src="img/logoUnDouaDeJazz.png">                            </a> </li>
             </ul>
+        </div> <!-- End: credits -->
 
-            <!--**** CREDITS ****-->
-            <div id="credits">
-                <h3>Six-Ring Circus remercie</h3>
+    </section> <!-- End: contact -->
 
-                <ul>
-                    <li><a href="http://www.jazzsra.fr/" target="_blank">Jazz(s)Ra</a> </li>
-                    <li><a href="http://www.tontonfling.org/">Studio les Tontons Flingueurs</a> </li>
-                    <li><a href="http://oreillesdelicates.fr/" target="_blank">Studio Oreilles Délicates</a> </li>
-                    <li></li>
-                    <li><span style="font-weight: bold">Photographies :</span> Christian-Cyril Cordat / Liva Rakotoarison</li>
-                </ul>
+</main>
 
-                <!--**** CREDITS LOGOS ****-->
-                <ul id="creditsLogos">
-                    <li><a href="http://www.jazzsra.fr/" target="_blank"><img src="img/logoJazzsra.png"> </a> </li>
-                    <li><a href="http://www.undouadejazz.com/" target="_blank"><img src="img/logoUnDouaDeJazz.png">                            </a> </li>
-                </ul>
-            </div> <!-- End: credits -->
-
-            <!--**** ©©©© ****-->
-            <div id="copyright">
-                <p>© SIX-RING CIRCUS - All rights reserved | Designed & coded by <b><a href="#" target="_blank">François                        Simitchiev</a></b></p>
-            </div>
-
-        </section> <!-- End: contact -->
-
-    </main>
-
-    <!--**** FOOTER ****-->
-    <footer>
-        <p>© SIX-RING CIRCUS - All rights reserved | Designed & coded by <b><a href="#" target="_blank">François                        Simitchiev</a></b></p>
-    </footer>
+<!--**** FOOTER ****-->
+<footer class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+    <p>© SIX-RING CIRCUS - All rights reserved<br>
+        Designed & coded by <b><a href="#" target="_blank">François Simitchiev</a></b></p>
+</footer>
 
 <script src="js/jquery.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
+<script src="jquery-scrolla-master/dist/scrolla.jquery.min.js"></script>
 <script src="js/main.js"></script>
 
-    <!--**** PRELOADER ****-->
-    <script type="text/javascript">
-        //<![CDATA[
-        $(window).on('load', function() { // makes sure the whole site is loaded
-            $('#status').fadeOut(); // will first fade out the loading animation
-            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-            $('body').delay(350).css({'overflow':'visible'});
-        });
-        //]]>
-    </script>
+<!--**** PRELOADER ****-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+    });
+    //]]>
+</script>
 
-    </body>
+</body>
 </html>

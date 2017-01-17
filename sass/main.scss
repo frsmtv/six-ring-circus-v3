@@ -3,10 +3,21 @@
 $h1FontSize: 8rem;
 $h1SpanFontSize: 10rem;
 
+#bg {
+  video#bgvid {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 100%!important;
+    height: 100%;
+    z-index: -1000;
+    overflow: hidden;
+  }
+}
+
 #whitelayer {
-  position: fixed;
-  z-index: -999;
-  top: 0;
+  position: absolute;
+  top: 50px;
   left: 0;
   height: 100%;
   width: 100%;
@@ -48,31 +59,23 @@ html, body {
     text-transform: uppercase;
   }
 
-  video#bgvid {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1000;
-    overflow: hidden;
-
-  }
-
   header {
     width: 100%;
     height: 50%;
     padding-bottom: 0;
 
     h1 {
+      display: block;
+      position: fixed;
+      z-index: 10000;
+      top: 40px;
+      left: 0;
+      right: 0;
+      margin: auto;
       text-transform: uppercase;
       font-size: $h1FontSize;
       text-align: center;
       letter-spacing: 20px;
-      margin-top: auto;
-      margin-bottom: auto;
       span {
         font-size: $h1SpanFontSize;
       }
@@ -90,18 +93,17 @@ html, body {
   }
 
   main {
+    margin-top: 100vh;
     section {
-      width: 70%;
-      margin-top: -10%;
-      margin-left: auto;
-      margin-right: auto;
+      width: 90%;
+      margin: 8% auto;
       letter-spacing: 2px;
       color: #333;
       //background: rgba(0, 0, 0, 0.5);
     }
 
     #info {
-      display: none;
+      margin-top: -10%;
 
       #palmares {
         font-size: 1.6rem;
@@ -131,19 +133,18 @@ html, body {
     }
 
     #concerts {
-      display: none;
+      margin-top: 8%!important;
+      margin-bottom: 8%!important;
     }
 
     #video {
-      display: none;
-
       margin-left: auto;
       margin-right: auto;
       text-align: center;
       background: none!important;
     }
     #audio {
-      display: none;
+      
 
       background: none!important;
       margin-top: 4%;
@@ -156,7 +157,7 @@ html, body {
     }
 
     #contact {
-      display: none;
+      
 
       font-size: 2rem;
       text-align: center;
@@ -213,31 +214,17 @@ html, body {
           }
         }
       }
-      #copyright {
-        display: none;
-
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 4%;
-        text-align: center;
-        p {
-          font-size: .8rem;
-          padding: 2%;
-        }
-      }
     }
   }
 
   footer {
-    display: none;
-
     z-index: 1;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 4%;
+    margin: 4% auto;
     text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     p {
-      font-size: .8rem;
+      font-size: .7rem;
       padding: 2%;
       margin: 0;
     }

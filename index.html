@@ -29,15 +29,15 @@
 </div>
 
     <!--**** VIDEO BG ****-->
-    <!--<div id="bg">-->
-        <!--<video autoplay="true" loop poster="" id="bgvid" class="">-->
-            <!--<source src="six-ring-circus-bg.webm" type="video/webm">-->
-            <!--<source src="six-ring-circus-bg.mp4" type="video/mp4">-->
-        <!--</video>-->
-    <!--</div> &lt;!&ndash; End: video bg &ndash;&gt;-->
+    <div id="bg">
+        <video autoplay="true" loop poster="" id="bgvid" class="">
+            <source src="six-ring-circus-bg.webm" type="video/webm">
+            <source src="six-ring-circus-bg.mp4" type="video/mp4">
+        </video>
+    </div> <!-- End: video bg -->
 
-    <!--&lt;!&ndash;**** WHITE LAYER ****&ndash;&gt;-->
-    <!--<div id="whitelayer"></div>-->
+    <!--**** WHITE LAYER ****-->
+    <div id="whitelayer"></div>
 
     <!--**** HEADER ****-->
     <header class="">
@@ -48,10 +48,13 @@
 
         <!--**** NAV ****-->
         <nav>
-                <span class="corner-nav top-left"><a id="info-btn" href="#">Info</a> </span>
-                <span class="corner-nav top-right"><a id="concerts-btn" href="#">Concerts</a> </span>
-                <span class="corner-nav bottom-left"><a id="contact-btn" href="#">Contact</a> </span>
-                <span class="corner-nav bottom-right"><a id="media-btn" href="#">Medias</a> </span>
+            <ul>
+                <li><span class=""><a id="home-btn" href="#">Six-Ring CIRCUS</a> </span></li>
+                <li><span class=""><a id="info-btn" href="#">Info</a> </span></li>
+                <li><span class=""><a id="concerts-btn" href="#">Concerts</a> </span></li>
+                <li><span class=""><a id="media-btn" href="#">Medias</a> </span></li>
+                <li><span class=""><a id="contact-btn" href="#">Contact</a> </span></li>
+            </ul>
         </nav>
 
     </header>
@@ -60,7 +63,7 @@
     <main>
 
         <!--**** INFO SECTION ****-->
-        <section id="info" class="">
+        <section id="info" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
 
             <!--**** PALMARES ****-->
             <p id="palmares" class="">
@@ -78,13 +81,13 @@
 
             <!--**** PRESSE ****-->
             <div id="presse">
-                <article class="Left">
+                <article class="Left animate" data-animate="fadeInLeft" data-duration="1.0s" data-delay="0.1s" data-offset="100">
                     <p>
                         « Six-Ring CIRCUS nous embarque dans un voyage musical hybride et mutant. Quittant allègrement la culture jazz pour des contrées rock très progressives ouvertes aux influences variées, ce groupe est musicalement renversant »
                     </p>
                 </article>
 
-                <article class="Down">
+                <article class="Down animate" data-animate="fadeInDown" data-duration="1.0s" data-delay="0.1s" data-offset="100">
                     <p>
                         « Ce qui plaît surtout dans cette formation, outre les virtuosités en présence et la rythmiqued’enfer, c’est la créativité et le « saute frontières musicales » et l’énergie qui s’en dégage. Réjouissant ! »<br>
                         <br>
@@ -92,13 +95,13 @@
                     </p>
                 </article>
 
-                <article class="Up">
+                <article class="Up animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s" data-offset="100">
                     <p>
                         « Une remarquable cohésion de groupe, à travers des changements de tempi, des mesures complexes, des lignes de basse et de drums acrobatiques. D'emblée le public est sidéré et aux anges. »
                     </p>
                 </article>
 
-                <article class="RightBig">
+                <article class="RightBig animate" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.1s" data-offset="100">
                     <p>
                         « Les compositions sont pleines de belles pages atmosphériques, de jaillissements électro, de tempi hip hop ou néo-soul avec quelques transmutations du rythme en heavy-rock. Il y a du Hiatus Kaiyoté dans l'inspiration et surtout beaucoup de ressources personnelles. »<br>
                         <br>
@@ -109,7 +112,7 @@
         </section> <!-- End: info section -->
 
         <!--**** CONCERTS ****-->
-        <section id="concerts" class="">
+        <section id="concerts" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
 
             <!-- BANDSINTOWN -->
             <div id="bandsintown">
@@ -119,19 +122,19 @@
 
 
         <!--**** VIDEO ****-->
-        <section id="video" class="">
+        <section id="video" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
 
             <iframe width="853" height="480" src="https://www.youtube.com/embed/NwvUks0nrvo?showinfo=0" frameborder="0"                 allowfullscreen></iframe>
         </section> <!-- End: video -->
 
         <!--**** AUDIO ****-->
-        <section id="audio" class="">
+        <section id="audio" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
 
             <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/259806354&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
         </section> <!-- End: audio -->
 
         <!--**** CONTACT ****-->
-        <section id="contact" class="">
+        <section id="contact" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
 
             <ul>
                 <li><a href="mailto:sixringcircus.band@gmail.com">sixringcircus.band@gmail.com</a> </li>
@@ -147,7 +150,7 @@
             </ul>
 
             <!--**** CREDITS ****-->
-            <div id="credits">
+            <div id="credits" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
                 <h3>Six-Ring Circus remercie</h3>
 
                 <ul>
@@ -160,27 +163,23 @@
 
                 <!--**** CREDITS LOGOS ****-->
                 <ul id="creditsLogos">
-                    <li><a href="http://www.jazzsra.fr/" target="_blank"><img src="dist/img/logoJazzsra.png"> </a> </li>
-                    <li><a href="http://www.undouadejazz.com/" target="_blank"><img src="dist/img/logoUnDouaDeJazz.png">                            </a> </li>
+                    <li class="animate" data-animate="fadeInLeft" data-duration="1.0s" data-delay="0.1s" data-offset="100"><a href="http://www.jazzsra.fr/" target="_blank"><img src="dist/img/logoJazzsra.png"> </a> </li>
+                    <li class="animate" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.1s" data-offset="100"><a href="http://www.undouadejazz.com/" target="_blank"><img src="dist/img/logoUnDouaDeJazz.png">                            </a> </li>
                 </ul>
             </div> <!-- End: credits -->
-
-            <!--**** ©©©© ****-->
-            <div id="copyright">
-                <p>© SIX-RING CIRCUS - All rights reserved | Designed & coded by <b><a href="#" target="_blank">François                        Simitchiev</a></b></p>
-            </div>
 
         </section> <!-- End: contact -->
 
     </main>
 
     <!--**** FOOTER ****-->
-    <footer>
-        <p>© SIX-RING CIRCUS - All rights reserved | Designed & coded by <b><a href="#" target="_blank">François                        Simitchiev</a></b></p>
+    <footer class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+        <p>© SIX-RING CIRCUS - All rights reserved<br>
+            Designed & coded by <b><a href="#" target="_blank">François Simitchiev</a></b></p>
     </footer>
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="jquery-scrolla-master/dist/scrolla.jquery.min.js"></script>
 <script src="js/main.js"></script>
 
     <!--**** PRELOADER ****-->
