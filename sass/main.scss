@@ -6,7 +6,7 @@ $h1SpanFontSize: 10rem;
 #bg {
   video#bgvid {
     position: absolute;
-    top: 50px;
+    top: 0px;
     left: 0px;
     width: 100%!important;
     height: 100%;
@@ -17,7 +17,7 @@ $h1SpanFontSize: 10rem;
 
 #whitelayer {
   position: absolute;
-  top: 50px;
+  top: 0px;
   left: 0;
   height: 100%;
   width: 100%;
@@ -55,8 +55,10 @@ html, body {
   }
 
   h2 {
-    margin-left: 2%;
+    font-size: 2rem;
     text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
   }
 
   header {
@@ -65,10 +67,10 @@ html, body {
     padding-bottom: 0;
 
     h1 {
-      display: block;
-      position: fixed;
+      display: none;
+      position: absolute;
       z-index: 10000;
-      top: 40px;
+      top: 0px;
       left: 0;
       right: 0;
       margin: auto;

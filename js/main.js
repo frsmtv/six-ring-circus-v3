@@ -5,25 +5,7 @@ $(document).ready(function(){
     $('.animate').scrolla();
 
     // **** UI ANIMATIONS ****
-
-    // **** H1 REDUCE / NAV BOTTOM TO TOP ON SCROLL ****
-    var scroll_start = 0;
-    var startchange = $('body');
-    var offset = startchange.offset();
-    $(document).scroll(function() {
-        scroll_start = $(this).scrollTop();
-        if(scroll_start > offset.top) {
-            $('h1').css('font-size', '2rem');
-            $('h1').css('opacity', '.2');
-            $('h1 span').css('font-size', '2rem');
-            $('h1 span').css('opacity', '.2');
-        } else {
-            $('h1').css('font-size', '');
-            $('h1').css('opacity', '1');
-            $('h1 span').css('font-size', '');
-            $('h1 span').css('opacity', '1');
-        }
-    });
+    $('h1').delay(5000).fadeIn();
 
     // **** HOME BUTTON ****
     $('#home-btn').click(function(){
