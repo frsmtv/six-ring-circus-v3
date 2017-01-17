@@ -5,7 +5,8 @@ $(document).ready(function(){
     $('.animate').scrolla();
 
     // **** UI ANIMATIONS ****
-    $('h1').delay(5000).fadeIn();
+    $('h1').delay(5000).show().addClass('animated fadeIn');
+    $('nav').delay(5000).show().addClass('animated fadeInUp');
 
     // **** HOME BUTTON ****
     $('#home-btn').click(function(){
