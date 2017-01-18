@@ -5,8 +5,30 @@ $(document).ready(function(){
     $('.animate').scrolla();
 
     // **** UI ANIMATIONS ****
-    $('h1').delay(5000).show().addClass('animated fadeIn');
-    $('nav').delay(5000).show().addClass('animated fadeInUp');
+    $('h1').delay(5000).show('fade', 1000);
+    $('nav').delay(5000).show('fade', 1000);
+
+    // **** NAVBAR REDUCE ON SCROLL ****
+    var scroll_start = 0;
+    var startchange = $('body');
+    var offset = startchange.offset();
+    $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+            $('nav').css({
+                height: '25px',
+                'font-size': '0.6rem'
+            });
+        } else {
+            $('nav').css({
+                height: '',
+                'font-size': ''
+            });
+        }
+    });
+
+    // **** NAVBAR ZOOM ON HOVER ****
+
 
     // **** HOME BUTTON ****
     $('#home-btn').click(function(){
