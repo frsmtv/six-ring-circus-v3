@@ -55,6 +55,7 @@ html, body {
   }
 
   h2 {
+    padding-top: 4%;
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
@@ -97,7 +98,7 @@ html, body {
   main {
     margin-top: 100vh;
     section {
-      width: 90%;
+      width: 80%;
       margin: 8% auto;
       letter-spacing: 2px;
       color: #333;
@@ -108,14 +109,16 @@ html, body {
       margin-top: -10%;
 
       #palmares {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         text-transform: uppercase;
         margin: 0;
       }
 
       #bio {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         text-align: justify;
+        margin-top: 4%;
+        margin-bottom: 4%;
       }
 
       #presse {
@@ -123,6 +126,7 @@ html, body {
         justify-content: space-around;
         article {
           text-align: justify;
+          font-size: .9rem;
           margin: 0 2%;
           &:first-child {
             margin-left: 0;
@@ -136,7 +140,7 @@ html, body {
 
     #concerts {
       margin-top: 8%!important;
-      margin-bottom: 8%!important;
+      margin-bottom: 16%!important;
     }
 
     #video {
@@ -146,11 +150,7 @@ html, body {
       background: none!important;
     }
     #audio {
-      
-
       background: none!important;
-      margin-top: 4%;
-      margin-bottom: 4%;
       width: 853px;
       height: 600px;
       margin-left: auto;
@@ -160,8 +160,8 @@ html, body {
 
     #contact {
       
-
-      font-size: 2rem;
+    margin-top: -8%;
+      font-size: 1.2rem;
       text-align: center;
       ul {
         list-style: none;
