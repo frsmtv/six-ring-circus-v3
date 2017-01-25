@@ -67,21 +67,16 @@ html, body {
     height: 50%;
     padding-bottom: 0;
 
-    h1 {
+    img {
       display: none;
       position: absolute;
       z-index: 10000;
-      top: 50px;
+      top: 20px;
       left: 0;
       right: 0;
       margin: auto;
-      text-transform: uppercase;
-      font-size: $h1FontSize;
-      text-align: center;
-      letter-spacing: 20px;
-      span {
-        font-size: $h1SpanFontSize;
-      }
+      height: 100%;
+
 
       -webkit-transition: all 350ms ease-in-out;
       -moz-transition: all 350ms ease-in-out;
@@ -152,10 +147,19 @@ html, body {
     #audio {
       background: none!important;
       width: 853px;
-      height: 600px;
+      height: 400px;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
+      margin-bottom: 0;
+    }
+    #photo {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+
+
     }
 
     #contact {
