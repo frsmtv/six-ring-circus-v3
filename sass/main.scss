@@ -194,7 +194,10 @@ html, body {
       }
     }
 
-    .flickr-embed-photo {
+    #photo {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
 
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
         width: 80%;
