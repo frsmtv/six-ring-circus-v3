@@ -13,11 +13,15 @@ $h1SpanFontSize: 10rem;
     z-index: -1000;
     overflow: hidden;
     opacity: .5;
+
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      display: none;
+    }
   }
 }
 
 #whitelayer {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -25,19 +29,20 @@ $h1SpanFontSize: 10rem;
   background: rgba(255, 255, 255, 0.6);
 }
 
-body {
-
-}
-
 html, body {
   box-sizing: border-box;
   width: 100%;
-  height:100%;
+  height: 100%;
   margin: 0;
   padding: 0;
   font-size: 16px;
   font-family: 'Nunito Sans', sans-serif;
   color: #212121;
+
+  body {
+    background: url("../six-ring-circus-bg.mp4");
+    background-size: cover;
+  }
 
   a {
     text-decoration: none;
@@ -100,7 +105,7 @@ html, body {
       letter-spacing: 2px;
       color: #333;
 
-      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+      @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
         width: 100%;
         display: block;
         margin-left: auto;
@@ -138,71 +143,22 @@ html, body {
           }
         }
 
-        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
           flex-direction: column;
         }
       }
     }
 
     #concerts {
-      margin-top: 8%!important;
-      margin-bottom: 16%!important;
-
-      #bandsintown {
-      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-        //max-width: 100%;
-      }
-      }
+      margin-top: 8% !important;
+      margin-bottom: 16% !important;
     }
 
     #video {
       margin-left: auto;
       margin-right: auto;
       text-align: center;
-      background: none!important;
-
-      iframe {
-        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
-      }
-
-      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 */
-        padding-top: 25px;
-        height: 0;
-      }
-    }
-    #audio {
-      background: none!important;
-      width: 853px;
-      height: 400px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      margin-bottom: 0;
-
-      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-        width: 80%;
-      }
-    }
-    #photo {
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 0;
-
-      @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 */
-        padding-top: 25px;
-        height: 0;
-      }
+      background: none !important;
 
       iframe {
         @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -212,12 +168,47 @@ html, body {
           width: 100%;
           height: 100%;
         }
+      }
 
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+      }
+    }
+    #audio {
+      background: none !important;
+      width: 853px;
+      height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 0;
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        width: 80%;
+      }
+      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        width: 80%;
+      }
+    }
+
+    .flickr-embed-photo {
+
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        width: 80%;
+
+      }
+      @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
 
     #contact {
-    margin-top: -4%;
+      margin-top: -4%;
       font-size: 1.2rem;
       text-align: center;
       ul {
@@ -246,7 +237,7 @@ html, body {
           }
         }
 
-        @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
           width: 100%;
         }
       }
@@ -267,6 +258,9 @@ html, body {
           display: flex;
           justify-content: space-around;
           li {
+            @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+              padding: 5%;
+            }
             a {
               border-bottom: none !important;
               &:hover {
@@ -297,6 +291,7 @@ html, body {
     }
   }
 }
+
 
 
 
