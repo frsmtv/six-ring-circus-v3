@@ -1,6 +1,6 @@
 nav {
   display: none;
-  
+
   -webkit-transition: all 1000ms ease-in-out;
   -moz-transition: all 1000ms ease-in-out;
   -ms-transition: all 1000ms ease-in-out;
@@ -14,22 +14,31 @@ nav {
   z-index: 10000;
   background: #fff;
   font-size: 1rem;
+
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    width: auto;
+  }
   ul {
     padding: 0;
     list-style: none;
     display: flex;
     justify-content: space-around;
-  }
 
-  a {
-    color: #e65928!important;
-    font-weight: bold;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    border-bottom: 1px solid transparent;
-    cursor: pointer;
-    &:hover {
-      border-bottom: 1px solid #e65928!important;
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      flex-direction: column;
+      text-align: left;
+      }
+    }
+
+    a {
+      color: #e65928 !important;
+      font-weight: bold;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      border-bottom: 1px solid transparent;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 1px solid #e65928 !important;
+      }
     }
   }
-}

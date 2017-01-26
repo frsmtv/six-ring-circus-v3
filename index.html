@@ -1,7 +1,7 @@
 <!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta lang="fr">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Six-Ring Circus - jazz hybride, rock progressif, tremplin émergence Jazz(s)Ra 2016. Elie Dufour (piano), Baptiste Ferrandis (guitare), Célia Forestier (chant), Elvire Jouve (batterie) et Alexandre Phalippon (basse).">
@@ -29,15 +29,15 @@
 </div>
 
     <!--**** VIDEO BG ****-->
-    <div id="bg">
-        <video autoplay="true" loop poster="" id="bgvid" class="">
-            <source src="six-ring-circus-bg.webm" type="video/webm">
-            <source src="six-ring-circus-bg.mp4" type="video/mp4">
-        </video>
-    </div> <!-- End: video bg -->
+    <!--<div id="bg">-->
+        <!--<video autoplay="true" loop poster="" id="bgvid" class="">-->
+            <!--<source src="six-ring-circus-bg.webm" type="video/webm">-->
+            <!--<source src="six-ring-circus-bg.mp4" type="video/mp4">-->
+        <!--</video>-->
+    <!--</div> &lt;!&ndash; End: video bg &ndash;&gt;-->
 
     <!--**** WHITE LAYER ****-->
-    <div id="whitelayer"></div>
+    <!--<div id="whitelayer"></div>-->
 
     <!--**** HEADER ****-->
     <header class="">
@@ -136,7 +136,7 @@
 
         <!--**** PHOTO ****-->
         <section id="photo" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-            <a data-flickr-embed="true"  href="https://www.flickr.com/photos/147158136@N07/albums/72157677055208426" title="choix 26.11"><img src="https://c1.staticflickr.com/6/5638/30456593594_3912f4725d_o.jpg" width="800" height="226" alt="choix 26.11"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+            <a data-flickr-embed="true"  href="https://www.flickr.com/photos/147158136@N07/albums/72157677055208426" title="choix 26.11"><img src="https://c1.staticflickr.com/6/5638/30456593594_3912f4725d_o.jpg" width="80%"  alt="choix 26.11"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
         </section> <!-- End: photo -->
 
         <!--**** CONTACT ****-->
@@ -190,16 +190,43 @@
 <script src="jquery-scrolla-master/dist/scrolla.jquery.min.js"></script>
 <script src="js/main.js"></script>
 
-    <!--**** PRELOADER ****-->
-    <script type="text/javascript">
-        //<![CDATA[
-        $(window).on('load', function() { // makes sure the whole site is loaded
-            $('#status').fadeOut(); // will first fade out the loading animation
-            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
-            $('body').delay(350).css({'overflow':'visible'});
-        });
-        //]]>
-    </script>
+<!--**** PRELOADER ****-->
+<script type="text/javascript">
+    //<![CDATA[
+    $(window).on('load', function() { // makes sure the whole site is loaded
+        $('#status').fadeOut(); // will first fade out the loading animation
+        $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+        $('body').delay(350).css({'overflow':'visible'});
+    });
+    //]]>
+</script>
 
-    </body>
+<!--**** TONEDEN ****-->
+<script>
+    (function() {
+        var script = document.createElement("script");
+
+        script.type = "text/javascript";
+        script.async = true;
+        script.src = "//sd.toneden.io/production/v2/toneden.loader.js";
+
+        var entry = document.getElementsByTagName("script")[0];
+        entry.parentNode.insertBefore(script, entry);
+    }());
+
+    ToneDenReady = window.ToneDenReady || [];
+    ToneDenReady.push(function() {
+        // Modify the dom and urls parameters to position
+        // your player and select tracks/sets/artists to play.
+        ToneDen.player.create({
+            dom: "#audio-2",
+            skin: "dark",
+            urls: [
+                "https://soundcloud.com/sixringcircus/sets/six-ring-circus"
+            ]
+        });
+    });
+</script>
+
+</body>
 </html>
