@@ -27,6 +27,24 @@ $(document).ready(function(){
     //     }
     // });
 
+    // **** GALLERY ****
+    $("#gallery").flickrGallery({
+        // OPTIONS
+        //FLICKR API KEY
+        Key: 'dd7e89c7f0c07a951c30b34d7a013486',
+//Secret
+        Secret: 'd792124bcd9f09bb',
+//FLICKR user ID
+        User: '',
+//Flickr PhotoSet ID
+        PhotoSet: '72157677055208426',
+        /*-- VIEWBOX SETTINGS --*/
+        Speed   : 400,    //Speed of animations
+        navigation  : 1,    //(true) <a href="http://www.jqueryscript.net/tags.php?/Navigation/">Navigation</a> (arrows)
+        keyboard  : 1,    //(true) Keyboard navigation
+        numberEl  : 0     //(true) Number elements
+    });
+
 
 
     // **** HOME BUTTON ****

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
     <link rel="stylesheet" href="PreLoadMe/css/styles.css">
+    <link rel="stylesheet" href="dist/css/gallery.css">
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
 </head>
 
@@ -29,12 +30,12 @@
 </div>
 
     <!--**** VIDEO BG ****-->
-    <div id="bg">
-        <video autoplay="true" loop poster="" id="bgvid" class="">
-            <source src="six-ring-circus-bg.webm" type="video/webm">
-            <source src="six-ring-circus-bg.mp4" type="video/mp4">
-        </video>
-    </div> <!-- End: video bg -->
+    <!--<div id="bg">-->
+        <!--<video autoplay="true" loop poster="" id="bgvid" class="">-->
+            <!--<source src="six-ring-circus-bg.webm" type="video/webm">-->
+            <!--<source src="six-ring-circus-bg.mp4" type="video/mp4">-->
+        <!--</video>-->
+    <!--</div> &lt;!&ndash; End: video bg &ndash;&gt;-->
 
     <!--**** WHITE LAYER ****-->
     <!--<div id="whitelayer"></div>-->
@@ -139,9 +140,14 @@
 
         <!--**** PHOTO ****-->
         <section id="photo" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-            <h2 class="mob-media-link"><a href="https://www.flickr.com/photos/147158136@N07/31242773356/in/album-72157677055208426" target="_blank">photos</a> </h2>
-            <a data-flickr-embed="true"  href="https://www.flickr.com/photos/147158136@N07/albums/72157677055208426" title="choix 26.11"><img src="https://c1.staticflickr.com/6/5638/30456593594_3912f4725d_o.jpg" width="80%"  alt="choix 26.11"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-        </section> <!-- End: photo -->
+            <!--<h2 class="mob-media-link"><a href="https://www.flickr.com/photos/147158136@N07/31242773356/in/album-72157677055208426" target="_blank">photos</a> </h2>-->
+            <!--<a data-flickr-embed="true"  href="https://www.flickr.com/photos/147158136@N07/albums/72157677055208426" title="choix 26.11"><img src="https://c1.staticflickr.com/6/5638/30456593594_3912f4725d_o.jpg" width="80%"  alt="choix 26.11"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>-->
+
+            <div class="niceGallery" id="gallery">
+
+            </div> <!-- End: gallery -->
+
+        </section>  <!-- End: photo -->
 
         <!--**** CONTACT ****-->
         <section id="contact" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
@@ -189,9 +195,11 @@
             Designed & coded by <b><a href="#" target="_blank">François Simitchiev</a></b></p>
     </footer>
 
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="jquery-scrolla-master/dist/scrolla.jquery.min.js"></script>
+<script src="js/FlickrAPI.js"></script>
+<script src="js/Flickr.Gallery.min.js"></script>
 <script src="js/main.js"></script>
 
 <!--**** PRELOADER ****-->
