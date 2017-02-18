@@ -1,9 +1,9 @@
 <!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta lang="fr">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Six-Ring Circus - jazz hybride, rock progressif, tremplin émergence Jazz(s)Ra 2016. Elie Dufour (piano), Baptiste Ferrandis (guitare), Célia Forestier (chant), Elvire Jouve (batterie) et Alexandre Phalippon (basse).">
     <meta name="author" content="François SIMITCHIEV">
     <title>Six-Ring Circus</title>
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="PreLoadMe/css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/bundle-sass.css">
 </head>
 
@@ -29,12 +30,15 @@
 </div>
 
 <!--**** VIDEO BG ****-->
-<div id="bg">
-    <video autoplay="true" loop poster="" id="bgvid" class="">
-        <source src="six-ring-circus-bg.webm" type="video/webm">
-        <source src="six-ring-circus-bg.mp4" type="video/mp4">
-    </video>
-</div> <!-- End: video bg -->
+<!--<div id="bg">-->
+<!--<video autoplay="true" loop poster="" id="bgvid" class="">-->
+<!--<source src="six-ring-circus-bg.webm" type="video/webm">-->
+<!--<source src="six-ring-circus-bg.mp4" type="video/mp4">-->
+<!--</video>-->
+<!--</div> &lt;!&ndash; End: video bg &ndash;&gt;-->
+
+<!--**** WHITE LAYER ****-->
+<!--<div id="whitelayer"></div>-->
 
 <!--**** HEADER ****-->
 <header class="">
@@ -83,7 +87,7 @@
                 </p>
             </article>
 
-            <article class="Down animate" data-animate="fadeInUp" data-duration="1.0s" data-delay="0.1s" data-offset="100">
+            <article class="Down animate" data-animate="fadeInDown" data-duration="1.0s" data-delay="0.1s" data-offset="100">
                 <p>
                     « Ce qui plaît surtout dans cette formation, outre les virtuosités en présence et la rythmique d’enfer, c’est la créativité et le « saute frontières musicales » et l’énergie qui s’en dégage. Réjouissant ! »<br>
                     <br>
@@ -96,7 +100,7 @@
                     « Une remarquable cohésion de groupe, à travers des changements de tempi, des mesures complexes, des lignes de basse et de drums acrobatiques. D'emblée le public est sidéré et aux anges. »
                 </p>
             </article>
-
+            
         </div> <!-- End: presse -->
     </section> <!-- End: info section -->
 
@@ -115,28 +119,33 @@
     <section id="video" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
         <h2>Medias</h2>
 
+
         <iframe width="853" height="480" src="https://www.youtube.com/embed/NwvUks0nrvo?showinfo=0" frameborder="0"                 allowfullscreen></iframe>
     </section> <!-- End: video -->
 
     <!--**** AUDIO ****-->
     <section id="audio" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
 
-        <iframe width="100%" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/259806354&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/259806354&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
     </section> <!-- End: audio -->
 
     <!--**** PHOTO ****-->
     <section id="photo" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-        <a data-flickr-embed="true"  href="https://www.flickr.com/photos/147158136@N07/albums/72157677055208426" title="choix 26.11"><img src="https://c1.staticflickr.com/6/5638/30456593594_3912f4725d_o.jpg" width="800" height="226" alt="choix 26.11"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
-    </section> <!-- End: photo -->
+
+        <div class="niceGallery" id="gallery">
+
+        </div> <!-- End: gallery -->
+
+    </section>  <!-- End: photo -->
 
     <!--**** CONTACT ****-->
     <section id="contact" class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
         <h2>Contact</h2>
 
-        <ul>
+        <ul style="text-transform: uppercase;">
             <li><a href="mailto:sixringcircus.band@gmail.com">sixringcircus.band@gmail.com</a> </li>
-            <li><a href="docs/dpSixRingCircus.pdf">dossier de presse</a> | <a href="docs/presskitSixRingCircus.pdf">presskit (en)</a> </li>
-            <li><a href="docs/techRiderSixRingCircus.pdf">fiche technique | tech rider</a> </li>
+            <li><a href="#">dossier de presse</a> | <a href="#">presskit (en)</a> </li>
+            <li><a href="#">fiche technique | tech rider</a> </li>
         </ul>
 
         <!--**** SOCIAL ****-->
@@ -155,13 +164,14 @@
                 <li><a href="http://www.tontonfling.org/">Studio les Tontons Flingueurs</a> </li>
                 <li><a href="http://oreillesdelicates.fr/" target="_blank">Studio Oreilles Délicates</a> </li>
                 <li></li>
-                <li><span style="font-weight: bold">Photographies :</span> Christian-Cyril Cordat / Liva Rakotoarison</li>
+                <li><span style="font-weight: bold">Photographies :</span><br>
+                    Christian-Cyril Cordat / Liva Rakotoarison</li>
             </ul>
 
             <!--**** CREDITS LOGOS ****-->
             <ul id="creditsLogos">
                 <li class="animate" data-animate="fadeInLeft" data-duration="1.0s" data-delay="0.1s" data-offset="100"><a href="http://www.jazzsra.fr/" target="_blank"><img src="img/logoJazzsra.png"> </a> </li>
-                <li class="animate" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.1s" data-offset="100"><a href="http://www.undouadejazz.com/" target="_blank"><img src="img/logoUnDouaDeJazz.png">                            </a> </li>
+                <li style="margin-top: -8px" class="animate" data-animate="fadeInRight" data-duration="1.0s" data-delay="0.1s" data-offset="100"><a href="http://www.undouadejazz.com/" target="_blank"><img src="img/logoUnDouaDeJazz.png">                            </a> </li>
             </ul>
         </div> <!-- End: credits -->
 
@@ -172,12 +182,15 @@
 <!--**** FOOTER ****-->
 <footer class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
     <p>© SIX-RING CIRCUS - All rights reserved<br>
-        Designed & coded by <b><a href="#" target="_blank">François Simitchiev</a></b></p>
+        Designed & coded by<br>
+        <a href="http://dakheurklub.fr" target="_blank"><img src="img/dakheur-klub-logo.png"></a></p>
 </footer>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="jquery-scrolla-master/dist/scrolla.jquery.min.js"></script>
+<script src="js/FlickrAPI.js"></script>
+<script src="js/Flickr.Gallery.min.js"></script>
 <script src="js/main.js"></script>
 
 <!--**** PRELOADER ****-->
