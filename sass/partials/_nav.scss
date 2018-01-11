@@ -1,20 +1,17 @@
 nav {
   display: none;
-
   -webkit-transition: all 1000ms ease-in-out;
   -moz-transition: all 1000ms ease-in-out;
   -ms-transition: all 1000ms ease-in-out;
   -o-transition: all 1000ms ease-in-out;
   transition: all 1000ms ease-in-out;
-
   position: fixed;
   width: 100%;
   height: 50px;
-  top: 0;
+  padding-top: 20px;
   z-index: 10000;
   background: #fff;
-  font-size: 1rem;
-
+  font-size: .6rem;
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     width: auto;
   }
@@ -29,16 +26,16 @@ nav {
       text-align: left;
       }
     }
-
     a {
-      color: #e65928 !important;
+      // color: #e65928 !important;
       font-weight: bold;
       letter-spacing: 4px;
       text-transform: uppercase;
       border-bottom: 1px solid transparent;
       cursor: pointer;
+      padding-bottom: 5px;
       &:hover {
-        border-bottom: 1px solid #e65928 !important;
+        border-bottom: 1px solid black!important;
       }
     }
   }

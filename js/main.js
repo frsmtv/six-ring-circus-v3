@@ -5,8 +5,23 @@ $(document).ready(function(){
     $('.animate').scrolla();
 
     // **** UI ANIMATIONS ****
-    $('#intro').delay(2500).show('fade', 1000);
-    $('nav').delay(2500).show('fade', 1000);
+    $('header').delay(1000).show('fade', 1000);
+    $('nav, #logo, h1').delay(2000).show('fade', 1000);
+    $('main, footer').delay(3000).show('fade', 1000);
+
+    // $('header img').mouseover(function(){
+    //     $(this).attr('src', 'dist/img/six-ring-circus-eric-meurice.jpg');
+    //     $('header figure figcaption').css('opacity', '1');
+    // });
+
+    // $('header img').mouseleave(function(){
+    //     $(this).attr('src', 'dist/img/we-are-six-ring-circus.jpg');
+    //     $('header figure figcaption').css('opacity', '');
+    // });
+
+    $('header img').click(function(){
+        $("html, body").animate({ scrollTop: $('#info').offset().top }, 2000, 'easeInOutExpo');
+    });
 
     // **** NAVBAR REDUCE ON SCROLL ****
     // var scroll_start = 0;
@@ -49,38 +64,28 @@ $(document).ready(function(){
 
     // **** HOME BUTTON ****
     $('#home-btn').click(function(){
-        $('html, body').animate({
-            scrollTop: $('body').offset().top - 20
-        }, 1000);
+        $("html, body").animate({ scrollTop: $('body').offset().top -20 }, 2000, 'easeInOutExpo');
     });
 
     // **** INFO SECTION ****
     $('#info-btn').click(function(){
-        $('html, body').animate({
-            scrollTop: $('#info').offset().top - 20
-        }, 1000);
+        $("html, body").animate({ scrollTop: $('#info').offset().top -20 }, 2000, 'easeInOutExpo');
     });
 
     // **** CONCERTS SECTION ****
     $('#concerts-btn').click(function(){
-        $('html, body').animate({
-            scrollTop: $('#concerts').offset().top - 20
-        }, 1000);
+        $("html, body").animate({ scrollTop: $('#concerts').offset().top -20 }, 2000, 'easeInOutExpo');
     });
 
     // **** MEDIAS SECTION ****
     $('#media-btn').click(function(){
-        $('html, body').animate({
-            scrollTop: $('#video').offset().top - 20
-        }, 1000);
+        $("html, body").animate({ scrollTop: $('#video').offset().top -20 }, 2000, 'easeInOutExpo');
     });
 
 
     // **** CONTACT SECTION ****
     $('#contact-btn').click(function(){
-        $('html, body').animate({
-            scrollTop: $('#contact').offset().top - 20
-        }, 1000);
+        $("html, body").animate({ scrollTop: $('#contact').offset().top -20 }, 2000, 'easeInOutExpo');
     });
 
 

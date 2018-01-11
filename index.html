@@ -16,7 +16,7 @@
 
     <!--**** STYLES ****   -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="dist/css/animate.min.css">
     <link rel="stylesheet" href="PreLoadMe/css/styles.css">
     <link rel="stylesheet" href="dist/css/gallery.css">
     <link rel="stylesheet" href="dist/css/bundle-sass.css">
@@ -29,21 +29,19 @@
     <div id="status">&nbsp;</div>
 </div>
 
-    <!--**** VIDEO BG ****-->
-    <!--<div id="bg">-->
-        <!--<video autoplay="true" loop poster="" id="bgvid" class="">-->
-            <!--<source src="six-ring-circus-bg.webm" type="video/webm">-->
-            <!--<source src="six-ring-circus-bg.mp4" type="video/mp4">-->
-        <!--</video>-->
-    <!--</div> &lt;!&ndash; End: video bg &ndash;&gt;-->
-
-    <!--**** WHITE LAYER ****-->
-    <!--<div id="whitelayer"></div>-->
-
     <!--**** HEADER ****-->
     <header class="">
 
-        <img id="intro" src="dist/img/six-ring-circus.png" alt="Six-Ring Circus logo">
+        <img id="logo" src="dist/img/we-are-six-ring-circus.png" alt="Six-Ring Circus logo">
+
+        <figure>
+            <img id="intro" src="dist/img/we-are-six-ring-circus.jpg" alt="Six-Ring Circus logo">
+            <figcaption>© Eric Meurice</figcaption>
+        </figure>
+
+        <h1>Album SIX-RING CIRCUS
+            <span>1er juin 2018</span>
+        </h1>
 
         <!--**** NAV ****-->
         <nav>
@@ -66,7 +64,11 @@
             <h2>Info</h2>
 
             <!--**** PALMARES ****-->
-            <p id="palmares" class="">
+            <p id="palmares" class="">                
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                Lauréat jeunes talents St-Germain-Des-Res 2017<br>
+                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                Lauréat Jazz En Ville 2017<br>
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                 Lauréat émergence jazz(s)ra 2016<br>
                 <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
@@ -155,15 +157,15 @@
 
             <ul style="text-transform: uppercase;">
                 <li><a href="mailto:sixringcircus.band@gmail.com">sixringcircus.band@gmail.com</a> </li>
-                <li><a href="#">dossier de presse</a> | <a href="#">presskit (en)</a> </li>
-                <li><a href="#">fiche technique | tech rider</a> </li>
+                <li><a href="dist/docs/SIX-RING-CIRCUS-2017.pdf" target="_blank">dossier de presse</a></li>
+                <li><a href="dist/docs/techRiderSixRingCircus.pdf" target="_blank">fiche technique</a> </li>
             </ul>
 
             <!--**** SOCIAL ****-->
             <ul id="social">
-                <li><a href="https://www.facebook.com/sixringcircusband/?fref=ts" target="_blank"><i class="fa fa-facebook"                 aria-hidden="true"></i></a> </li>
-                <li><a href="https://soundcloud.com/sixringcircus" target="_blank"><i class="fa fa-soundcloud"                              aria-hidden="true"></i></a> </li>
-                <li><a href="https://www.youtube.com/watch?v=NwvUks0nrvo&list=PLUMKsOqa5WP8k5eGxkyQZrkjs4zcSS1C9"                           target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </li>
+                <li><a href="https://www.facebook.com/sixringcircusband/?fref=ts" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a> </li>
+                <li><a href="https://soundcloud.com/sixringcircus" target="_blank"><i class="fa fa-soundcloud" aria-hidden="true"></i></a> </li>
+                <li><a href="https://www.youtube.com/watch?v=NwvUks0nrvo&list=PLUMKsOqa5WP8k5eGxkyQZrkjs4zcSS1C9" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a> </li>
             </ul>
 
             <!--**** CREDITS ****-->
@@ -172,7 +174,7 @@
 
                 <ul>
                     <li><a href="http://www.jazzsra.fr/" target="_blank">Jazz(s)Ra</a> </li>
-                    <li><a href="http://www.tontonfling.org/">Studio les Tontons Flingueurs</a> </li>
+                    <li><a href="http://www.tontonfling.org/" target="_blank">Studio les Tontons Flingueurs</a> </li>
                     <li><a href="http://oreillesdelicates.fr/" target="_blank">Studio Oreilles Délicates</a> </li>
                     <li></li>
                     <li><span style="font-weight: bold">Photographies :</span> Christian-Cyril Cordat / Liva Rakotoarison</li>
@@ -191,9 +193,8 @@
 
     <!--**** FOOTER ****-->
     <footer class="animate" data-animate="fadeIn" data-duration="1.0s" data-delay="0.1s" data-offset="100">
-        <p>© SIX-RING CIRCUS - All rights reserved<br>
-            Designed & coded by<br>
-            <a href="#" target="_blank"><img src="dist/img/dakheur-klub-logo.png"></a></p>
+        <p>© SIX-RING CIRCUS - All rights reserved.
+        </p>
     </footer>
 
 <script src="js/jquery.min.js"></script>
@@ -215,7 +216,7 @@
 </script>
 
 <!--**** TONEDEN ****-->
-<script>
+<!-- <script>
     (function() {
         var script = document.createElement("script");
 
@@ -239,7 +240,7 @@
             ]
         });
     });
-</script>
+</script> -->
 
 </body>
 </html>
