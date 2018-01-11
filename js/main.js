@@ -5,9 +5,9 @@ $(document).ready(function(){
     $('.animate').scrolla();
 
     // **** UI ANIMATIONS ****
-    $('header').delay(1000).show('fade', 1000);
-    $('nav, #logo, h1').delay(2000).show('fade', 1000);
-    $('main, footer').delay(3000).show('fade', 1000);
+    $('header').delay(500).show('fade', 1000);
+    $('nav, #logo, h1').delay(750).show('fade', 1000);
+    $('main, footer').delay(1000).show('fade', 1000);
 
     // $('header img').mouseover(function(){
     //     $(this).attr('src', 'dist/img/six-ring-circus-eric-meurice.jpg');
@@ -20,7 +20,7 @@ $(document).ready(function(){
     // });
 
     $('header img').click(function(){
-        $("html, body").animate({ scrollTop: $('#info').offset().top }, 2000, 'easeInOutExpo');
+        $("html, body").animate({ scrollTop: $('#info').offset().top -20 }, 2000, 'easeInOutExpo');
     });
 
     // **** NAVBAR REDUCE ON SCROLL ****
