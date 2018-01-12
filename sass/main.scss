@@ -102,6 +102,9 @@ html, body {
       &:hover {
         cursor: pointer;
       }
+      @media only screen and (max-device-width: 767px) {
+        width: 100px;
+      }
     }
     figure {
       display: none;
@@ -121,8 +124,8 @@ html, body {
         &:hover {
           cursor: pointer;
         }
-      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-        margin-top: 150px;
+      @media only screen and (max-device-width: 767px) {
+        width: 100%;
       }
     }
     figcaption {
@@ -130,8 +133,26 @@ html, body {
           opacity: 0;
         }
     }
-    h1 {
+    div#getting-started {
       display: none;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 70%;
+      font-size: 2rem;
+      // -webkit-text-stroke: 1px black;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 10px;
+      color: white;
+       @media only screen and (max-device-width: 767px) {
+        top: 60%;
+        font-size: .7rem;
+      }
+    }
+    h1 {
+      // display: none;
       position: absolute;
       left: 0;
       right: 0;
@@ -171,12 +192,19 @@ html, body {
         line-height: 2;
         text-transform: uppercase;
         margin: 0;
+        @media only screen and (max-device-width: 767px) {
+          font-size: .8rem;
+        }
       }
       #bio {
         font-size: 1.1rem;
         text-align: justify;
         margin-top: 4%;
         margin-bottom: 4%;
+        @media only screen and (max-device-width: 767px) {
+          font-size: .8rem;
+          margin-top: 60px;
+        }
       }
       #presse {
         display: flex;
@@ -185,6 +213,10 @@ html, body {
           text-align: justify;
           font-size: .9rem;
           margin: 0 2%;
+          @media only screen and (max-device-width: 767px) {
+          font-size: .7rem;
+          margin-bottom: 20px;
+        }
           &:first-child {
             margin-left: 0;
           }
@@ -194,6 +226,9 @@ html, body {
         }
         @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
           flex-direction: column;
+        }
+        @media only screen and (max-device-width: 767px) {
+          margin-top: 60px;
         }
       }
     }
@@ -298,7 +333,7 @@ html, body {
           text-transform: uppercase;
         }
         #creditsLogos {
-          width: 30%;
+          width: 70%;
           margin-top: 4%;
           margin-bottom: 0;
           padding: 0;
@@ -306,6 +341,11 @@ html, body {
           margin-right: auto;
           display: flex;
           justify-content: space-around;
+          align-items: center;
+          @media only screen and (max-device-width: 767px) {
+            width: 100%;
+            flex-direction: column;
+          }
           li {
             @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
               padding: 5%;
@@ -315,6 +355,12 @@ html, body {
               &:hover {
                 opacity: .5;
                 border-bottom: none !important;
+              }
+              img {
+                width: 100px;
+                @media only screen and (max-device-width: 767px) {
+                 width: 50px;
+                }
               }
             }
           }
