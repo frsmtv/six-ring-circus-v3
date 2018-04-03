@@ -14,23 +14,6 @@ $h1FontSize: 8rem;
 $h1SpanFontSize: 10rem;
 $font2: 'beynoregular';
 
-#bg {
-  video#bgvid {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%!important;
-    height: 100%!important;
-    z-index: -1000;
-    overflow: hidden;
-    opacity: .5;
-
-    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-      display: none;
-    }
-  }
-}
-
 #whitelayer {
   position: fixed;
   top: 0;
@@ -38,6 +21,24 @@ $font2: 'beynoregular';
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.6);
+}
+
+#bg {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 30vh;
+  margin-bottom: -50vh;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -ms-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+  @media only screen and (max-device-width: 767px) {
+    height: 50vh;
+  }
 }
 
 html, body {
@@ -49,11 +50,6 @@ html, body {
   font-size: 16px;
   font-family: 'Nunito Sans', sans-serif;
   color: #212121;
-
-  body {
-    background: url("../six-ring-circus-bg.mp4");
-    background-size: cover;
-  }
 
   a {
     text-decoration: none;
@@ -175,9 +171,8 @@ html, body {
     section {
       width: 80%;
       margin: 8% auto;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
       color: #333;
-
       @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
         width: 100%;
         display: block;
@@ -185,7 +180,15 @@ html, body {
         margin-right: auto;
       }
     }
-
+    #teaser {
+      padding-top: 10vh;
+      iframe {
+        width: 100%;
+        @media only screen and (max-device-width: 767px) {
+          height: auto;
+        }
+      }
+    }
     #info {
       #palmares {
         font-size: 1.2rem;
@@ -237,6 +240,7 @@ html, body {
       margin-bottom: 16% !important;
     }
     #video {
+      display: none;
       margin-left: auto;
       margin-right: auto;
       text-align: center;
@@ -371,7 +375,7 @@ html, body {
   footer {
     display: none;
     z-index: 1;
-    margin: 4% auto;
+    margin: 4% auto 20vh;
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -382,7 +386,9 @@ html, body {
       img {
         width: 100px;
       }
-
+      @media only screen and (max-device-width: 767px) {
+        margin-bottom: 30vh;
+      }
       @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
         font-size: .5rem;
       }
