@@ -24,13 +24,11 @@ $font2: 'beynoregular';
 }
 
 #bg {
-  position: fixed;
+  position: absolute;
   z-index: 10;
   bottom: 0;
   left: 0;
-  width: 100vw;
-  height: 30vh;
-  margin-bottom: -50vh;
+  width: 100%;
   -webkit-transition: all 500ms ease-in-out;
   -moz-transition: all 500ms ease-in-out;
   -ms-transition: all 500ms ease-in-out;
@@ -375,11 +373,13 @@ html, body {
   }
   footer {
     display: none;
+    position: relative;
     z-index: 1;
-    margin: 4% auto 20vh;
+    margin: 4% auto 0;
     text-align: center;
     letter-spacing: 2px;
     text-transform: uppercase;
+    padding-bottom: 20vh;
     p {
       font-size: .6rem;
       padding: 2%;

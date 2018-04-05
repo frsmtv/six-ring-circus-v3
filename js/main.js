@@ -31,17 +31,17 @@ $(document).ready(function(){
     })
 
     // **** NAVBAR REDUCE ON SCROLL ****
-    var scroll_start = 0;
-    var startchange = $('header');
-    var offset = startchange.offset();
-    $(document).scroll(function() {
-        scroll_start = $(this).scrollTop();
-        if(scroll_start > offset.top) {
-            $('#bg').css('margin-bottom', '0');
-        } else {
-            $('#bg').css('margin-bottom', '');
-        }
-    });
+    // var scroll_start = 0;
+    // var startchange = $('header');
+    // var offset = startchange.offset();
+    // $(document).scroll(function() {
+    //     scroll_start = $(this).scrollTop();
+    //     if(scroll_start > offset.top) {
+    //         $('#bg').css('margin-bottom', '0');
+    //     } else {
+    //         $('#bg').css('margin-bottom', '');
+    //     }
+    // });
 
     // **** GALLERY ****
     $("#gallery").flickrGallery({
