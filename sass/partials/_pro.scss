@@ -1,0 +1,18 @@
+#pro-cd {
+	@media only screen and (max-device-width: 767px) {
+		width: 80%;;
+	}	
+}
+#pro {
+	display: flex;
+	justify-content: space-between;
+	@media only screen and (max-device-width: 767px) {
+		flex-direction: column;
+	}	
+	.pro-col {
+		width: 50%;
+		@media only screen and (max-device-width: 767px) {
+			width: 100%;
+		}	
+	}
+}

@@ -3,7 +3,7 @@ $(document).ready(function(){
     // **** UI ANIMATIONS ****
     $('header').delay(500).show('fade', 1000);
     $('nav, #logo, h1').delay(750).show('fade', 1000);
-    $('main, footer, #getting-started').delay(1500).show('fade', 1000);
+    $('main, footer').delay(1500).show('fade', 1000);
 
     // $('header img').mouseover(function(){
     //     $(this).attr('src', 'dist/img/six-ring-circus-eric-meurice.jpg');
