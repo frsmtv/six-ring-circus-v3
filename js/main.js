@@ -16,7 +16,7 @@ $(document).ready(function(){
     // });
 
     $('header img').not('#mob-nav-toggle').click(function(){
-        $("html, body").animate({ scrollTop: $('#teaser').offset().top -20 }, 2000, 'easeInOutExpo');
+        $("html, body").animate({ scrollTop: $('#album-out').offset().top -20 }, 2000, 'easeInOutExpo');
     });
 
     // Mob nav toggle 
@@ -68,9 +68,13 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: $('body').offset().top -20 }, 2000, 'easeInOutExpo');
     });
 
+    $('#album-btn').click(function(){
+        $("html, body").animate({ scrollTop: $('#album-out').offset().top -20 }, 2000, 'easeInOutExpo');
+    });
+
     // **** INFO SECTION ****
     $('#info-btn').click(function(){
-        $("html, body").animate({ scrollTop: $('#teaser').offset().top -20 }, 2000, 'easeInOutExpo');
+        $("html, body").animate({ scrollTop: $('#info').offset().top -20 }, 2000, 'easeInOutExpo');
     });
 
     // **** CONCERTS SECTION ****
@@ -95,9 +99,13 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: $('body').offset().top -20 }, 2000, 'easeInOutExpo');
     });
 
+    $('#mob-album-btn').click(function(){
+        $("html, body").animate({ scrollTop: $('#album-out').offset().top -20 }, 2000, 'easeInOutExpo');
+    });
+
     // **** INFO SECTION ****
     $('#mob-info-btn').click(function(){
-        $("html, body").animate({ scrollTop: $('#teaser').offset().top -20 }, 2000, 'easeInOutExpo');
+        $("html, body").animate({ scrollTop: $('#info').offset().top -20 }, 2000, 'easeInOutExpo');
     });
 
     // **** CONCERTS SECTION ****

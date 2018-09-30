@@ -190,6 +190,30 @@ html, body {
         margin-right: auto;
       }
     }
+    #album-out {
+      position: relative;
+      img {
+        margin-top: 10vh;
+        max-width: 50%;
+        &#fanlink {
+          width: 15vw;
+          position: absolute;
+          margin-top: 0;
+          top: 15vh;
+          right: 0;
+        }
+      }
+      p {
+        width: 35%;
+      }
+      iframe {
+        display: none;
+        float: right;
+        margin-top: -40vh;
+        height: 1200px;
+        width: 40%;
+      }
+    }
     #teaser {
       padding-top: 10vh;
       iframe {
