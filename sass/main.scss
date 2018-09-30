@@ -195,26 +195,46 @@ html, body {
       img {
         margin-top: 10vh;
         max-width: 50%;
+        @media all and (max-width: 767px) {
+         width: 100%; 
+        }
         &#fanlink {
-          width: 15vw;
-          position: absolute;
-          margin-top: 0;
-          top: 15vh;
-          right: 0;
+          
         }
       }
       p {
-        width: 35%;
+        width: 45%;
+        @media (min-width:1680px) {
+          width: 35%;
+        }
+        @media all and (max-width: 767px) {
+          width: 100%;  
+        }
       }
-      iframe {
-        display: none;
-        float: right;
-        margin-top: -40vh;
-        height: 1200px;
-        width: 40%;
+      #fanlink-wrap {
+        width: 30vw;
+        @media (min-width:1680px) {
+          width: 20vw;
+        }
+        position: absolute;
+        margin-top: 0;
+        top: 15vh;
+        right: 0;
+        @media all and (max-width: 767px) {
+          position: relative;
+          display: block;
+          margin-bottom: 20vh;
+          width: 100%;  
+        }
+        img {
+          width: 100%;
+          margin: 0;
+          max-width: 100%;
+        }
       }
     }
     #teaser {
+      margin-top: 70vh!important;
       padding-top: 10vh;
       iframe {
         width: 100%;
