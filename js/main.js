@@ -82,11 +82,6 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: $('#concerts').offset().top -20 }, 2000, 'easeInOutExpo');
     });
 
-    // **** MEDIAS SECTION ****
-    $('#media-btn').click(function(){
-        $("html, body").animate({ scrollTop: $('#photo').offset().top -20 }, 2000, 'easeInOutExpo');
-    });
-
 
     // **** CONTACT SECTION ****
     $('#contact-btn').click(function(){
@@ -111,11 +106,6 @@ $(document).ready(function(){
     // **** CONCERTS SECTION ****
     $('#mob-concerts-btn').click(function(){
         $("html, body").animate({ scrollTop: $('#concerts').offset().top -20 }, 2000, 'easeInOutExpo');
-    });
-
-    // **** MEDIAS SECTION ****
-    $('#mob-media-btn').click(function(){
-        $("html, body").animate({ scrollTop: $('#photo').offset().top -20 }, 2000, 'easeInOutExpo');
     });
 
 
